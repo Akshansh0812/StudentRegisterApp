@@ -16,7 +16,7 @@ interface StudentDao {
     suspend fun deleteStudent(student :Student)
 
 
-    @Query("SELECT * FROM student_data_table")
+    @Query("select * from student_data_table")
     fun getAllStudent():LiveData<List<Student>>
 
 
